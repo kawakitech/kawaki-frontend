@@ -16,11 +16,13 @@
     4.2 - Google Map
 
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Ubuntu:ital,wght@0,400;1,100&family=Ubuntu:wght@300;400&family=Source+Code+Pro&family=Ubuntu&family=Varela+Round&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Ubuntu:ital,wght@0,400;1,100&family=Ubuntu:wght@300&family=Source+Code+Pro&family=Ubuntu&family=Varela+Round&display=swap'); */
 /*---   Global  ---*/
 * {
     outline: 0 !important;
     font-weight: normal;
+    
 }
 body {
     overflow-x: hidden;
@@ -50,21 +52,21 @@ a:focus
     opacity: 0;
 }
 .btn-border{
-    border: 2px solid #379889;
+    border: 2px solid #14213d;
     padding: 6px 66px;
     background-color: white;
     border-radius: 0;
-    color: #379889;
+    color: #14213d;
     font-size: 28px;
     text-transform: uppercase;
     transition: all .2s
 }
 .btn-border:hover {
-    background-color: #379889;
+    background-color: #fca311;
     color: white;
 }
 .text-blue {
-    color: #56b3a5;
+    color: #fca311;
 }
 .mb-20 {
     margin-bottom: 20px;
@@ -76,16 +78,16 @@ a:focus
 #team .members .name 
 {
     font-weight: normal;
-    font-family: Raleway-Black;
+    font-family: 'Ubuntu', sans-serif;
 }
 .navbar-nav>li>a 
 {
     font-weight: normal;
-    font-family: Raleway-ExtraBold;
+    font-family: 'Ubuntu', sans-serif;
 }
 #navbar_search input
 {
-    font-family: Raleway-Regular;
+    font-family: 'Ubuntu', sans-serif;
 }
 .services-item .short,
 #team .members .position,
@@ -94,17 +96,17 @@ a:focus
 #portfolio_gallery .info .short
 {
     font-weight: normal;
-    font-family: Raleway-Medium;
+    font-family: 'Ubuntu', sans-serif;
 }
 #about_us .short,
 .carousel-caption p
 {
-    font-family: Raleway-SemiBold;
+    font-family: 'Ubuntu', sans-serif;
 }
 #portfolio_gallery .info .name 
 {
     font-weight: normal;
-    font-family: Raleway-Bold;
+    font-family: 'Ubuntu', sans-serif;
 }
 .carousel-caption h1,
 #about_us .title,
@@ -118,7 +120,7 @@ a:focus
 .portfolio-filter .item.active a
  {
     font-weight: normal;
-    font-family: BigNoodleTitling;
+    font-family: 'Ubuntu', sans-serif;
 }
 /*----  Header  ----*/
 
@@ -153,16 +155,24 @@ a:focus
 }
 .navbar-brand {
     padding: 15px 0px;
+    /* height: 70px;
+    margin: -62px;   */
+    margin: -11px;
 }
+
 .nav>li>a:focus, .nav>li>a:hover {
     background-color: transparent;
 }
 .navbar-nav>li>a {
     font-size: 15px;
-    color: #56b3a5;
+    color: #fca311;
     text-transform: uppercase;
 }
+
 .navbar-nav li.active a {
+    color: white;
+}
+.navbar-nav li.active a :hover {
     color: white;
 }
 .search-block {
@@ -212,7 +222,7 @@ a:focus
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.86);
+    background-color: rgb(0 0 0 / 71%);
 }
 .carousel-inner:before,
 .carousel-inner:after {
@@ -244,8 +254,8 @@ a:focus
 .carousel-caption h1 {
     color: #ffffff;
     font-size: 76px;
-    border-left: 1px solid #56b3a5;
-    border-right: 1px solid #56b3a5;
+    border-left: 1px solid #fca311;
+    border-right: 1px solid #fca311;
     display: inline-block;
     padding: 20px 80px;
     position: relative;
@@ -259,7 +269,7 @@ a:focus
     position: absolute;
     width: 7%;
     height: 1px;
-    background-color: #56b3a5;
+    background-color: #fca311;
 }
 .carousel-caption h1 .border-top:before {
     top: 0px;
@@ -302,11 +312,11 @@ a:focus
     width: 13px;
     height: 13px;
     border-width: 2px;
-    border-color: #56b3a5;       
+    border-color: #fca311;       
     margin: 0 4px
 }
 .carousel-indicators .active {
-    background-color: #56b3a5;
+    background-color: #fca311;
 }
 
 /*----  Sections
@@ -324,8 +334,8 @@ a:focus
     padding-top: 105px;
 }
 .section-title {
-    color: #379889;
-    font-size: 65px;
+    color: #14213d;
+    font-size: 50px;
     text-transform: uppercase;
     text-align: center;
     position: relative;
@@ -345,7 +355,7 @@ a:focus
     transform: translateY(-50%);
     width: 100px;
     height: 1px;
-    background-color: #379889;
+    background-color: #14213d;
 }
 .section-title:before {
     left: 0;
@@ -374,15 +384,26 @@ a:focus
     position: absolute;
     width: 100%;
     left: 0;
-    border: 2px solid #56b3a5;
+    border: 2px solid #14213d;
     height: calc(100% - 24px);
     top: 12px;
+    display: flex;
+    overflow: hidden; /* Hide any overflowing content */
+    max-width: 100%; /* Ensure the image doesn't exceed the box width */
+    max-height: 100%; /* Ensure the image doesn't exceed the box height */
 }
 #about_us .img {
-    z-index: 9;
+    z-index: 4;
+    margin: 25px;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%; /* Ensure the image doesn't exceed the box width */
+    max-height: 100%; /* Ensure the image doesn't exceed the box height */
+  
 }
 #about_us .title {
     margin-bottom: 20px;
+    margin: 45px;
 }
 #about_us .short {
     color: #a5a5a5;
@@ -413,7 +434,7 @@ a:focus
     width: 69px;
     left: calc((100% - 69px)/2);
     height: 2px;
-    background-color: #379889;
+    background-color: #14213d;
     width: 70%;
     text-align: center;
     left: 15%;
@@ -425,7 +446,7 @@ a:focus
 }
 .services-item .icon i {
     font-size: 65px;
-    color: #379889;
+    color: #fca311;
 }
 
 /*----    Portfolio   -----*/
@@ -436,7 +457,7 @@ a:focus
 }
 .portfolio-filter .item a {
     text-transform: uppercase;
-    color: #a5a5a5;
+    color: #14213d;
     margin: 0 7px;
     padding: 3px 12px 1px;
 }
@@ -444,7 +465,7 @@ a:focus
     text-decoration: none;
 }
 .portfolio-filter .item.active a {
-    color: #379889;
+    color: #fca311;
     position: relative;
 }
 .portfolio-filter .item.active a:after {
@@ -639,7 +660,7 @@ a:focus
 }
 #team .slick-prev:before,
 #team .slick-next:before {
-    color: #379889;
+    color: #fca311;
 }
 #team .slick-prev {
     left: -10px;
@@ -655,7 +676,7 @@ a:focus
 }
 #team .slick-dots li button:before {
     font-size: 18px;
-    color: #379889;
+    color: #fca311;
 }
 /*---   Partners    ---*/
 #partners {
@@ -677,7 +698,7 @@ a:focus
 }
 #contact_form .control-label {
     font-size: 25px;
-    color: #379889;
+    color: #fca311;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
@@ -693,7 +714,7 @@ a:focus
     padding: 17px 12px;
 }
 #contact_form .form-control:focus {
-    border-color: #379889;
+    border-color: #fca311;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(55, 152, 137, 0.6);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(55, 152, 137, 0.6);
@@ -715,7 +736,7 @@ a:focus
 }
 #contacts .icon {
     font-size: 30px;
-    color: #379889;
+    color: #fca311;
     border: 1px solid;
     display: flex;
     display: -ms-flexbox;
@@ -747,7 +768,7 @@ a:focus
     height: 0;
     border-style: solid;
     border-width: 0 67vw 165px 67vw;
-    border-color: transparent transparent #379889 transparent;
+    border-color: transparent transparent #fca311 transparent;
     position: absolute;
     bottom: 0;
     left: -17%;
@@ -774,7 +795,7 @@ a:focus
     background-color: white;
 }
 #footer .social-links li:hover i {
-    color: #379889;
+    color: #fca311;
 }
 #footer .social-links li a {
     width: 100%;
@@ -793,4 +814,13 @@ a:focus
     color: white;
     font-size: 17px;
     margin-top: 17px;
+}
+
+.list{
+    color: solid black;
+    width: 5px;
+}
+
+.col-sm-3 :hover{
+transform: scale(1.2);
 }
