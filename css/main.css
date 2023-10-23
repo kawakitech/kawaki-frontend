@@ -26,6 +26,7 @@
 }
 body {
     overflow-x: hidden;
+    font-family: 'Ubuntu', sans-serif;
 }
 a,
 button {
@@ -162,6 +163,8 @@ a:focus
 
 .nav>li>a:focus, .nav>li>a:hover {
     background-color: transparent;
+    font-size: large !important;
+    color: white !important;
 }
 .navbar-nav>li>a {
     font-size: 15px;
@@ -393,7 +396,13 @@ a:focus
     max-height: 100%; /* Ensure the image doesn't exceed the box height */
 }
 #about_us .img {
-    z-index: 4;
+    z-index: 9;
+    box-sizing: border-box;
+    border-top: 5px solid black;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+  border-radius: 15px;
     margin: 25px;
     align-items: center;
     justify-content: center;
@@ -420,7 +429,7 @@ a:focus
 }
 .services-item .name {
     color: #a5a5a5;
-    font-size: 29px;
+    font-size: 26px;
     margin: 12px 0 11px 0;
 }
 .services-item .name span {
@@ -445,6 +454,7 @@ a:focus
     color: #a5a5a5;
 }
 .services-item .icon i {
+    padding: 3px;
     font-size: 65px;
     color: #fca311;
 }
@@ -823,4 +833,93 @@ a:focus
 
 .col-sm-3 :hover{
 transform: scale(1.2);
+}
+
+/* Blog section */
+
+/* .blog-section{
+    width: 1070px;
+    padding: 105px 15px 0px; 
+    text-align: center;
+    margin: 0 auto;
+
+}
+#blog-form, #blog-list {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    margin: 10px 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+button {
+    background-color:#fca311;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+}
+button:hover {
+    transform: scale(1.2);
+}
+
+.choose{
+    padding: 7px;
+}
+
+#posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.post img {
+    max-width: 100%;
+} */
+
+.blog-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin: auto;
+}
+
+.blog-card {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+}
+
+.blog-card img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-card h3 {
+    margin-top: 20px;
+}
+
+.blog-card p {
+    margin-top: 20px;
+}
+hr{
+    color: #000000 !important;
 }
